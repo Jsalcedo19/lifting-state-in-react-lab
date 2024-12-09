@@ -27,25 +27,22 @@ const App = () => {
   const addIngredient = (ingredient) => {
     setStack([ingredient, ...stack]);
   };
-
+//used chat to get help for this function.
   const removeIngredient = (index) => {
     setStack(stack.filter((_, i) => i !== index));
   };
 
   return (
-    <div className="main">
+    <main>
       <h1>Burger Stacker</h1>
-      <div className="section">
+      <section>
         <IngredientList
             ingredients={availableIngredients}
-            addIngredient={addIngredient}
-          />
-        </div>
-        <div class name="section"> 
+            addIngredient={addIngredient} />    
           <BurgerStack stack={stack} removeIngredient={removeIngredient} />
-        </div>
+        </section>
       
-    </div>
+    </main>
   )
 };
 
