@@ -6,7 +6,8 @@ const IngredientList = ({ ingredients, addIngredient }) => {
     <div className="IngredientList">
     <ul>
         {ingredients.map((ingredient, index) => (
-        <li key={index} style={{ backgroundColor: ingredient.color }}>
+        <li key={index} 
+        style={{ backgroundColor: ingredient.color }}>
             {ingredient.name}
             <button onClick={() => addIngredient(ingredient)}>Add</button>
             </li>
