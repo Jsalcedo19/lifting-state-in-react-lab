@@ -9,11 +9,10 @@ const IngredientList = ({ ingredients, addIngredient }) => {
         <li key={index} style={{ backgroundColor: ingredient.color }}>
             {ingredient.name}
             <button onClick={() => addIngredient(ingredient)}>Add</button>
-        </li>
+            </li>
         ))}
-
-
-    </ul>
+        
+     </ul>
     </div>
   
     );};

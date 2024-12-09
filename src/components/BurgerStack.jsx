@@ -13,12 +13,8 @@ const BurgerStack = ({ stack, removeIngredient }) => {
                 <button className="button remove-button" onClick={() => removeIngredient(index)}>Remove</button>
             </li>
             ))};
-
-
-
-    
-        </ul>
-    </div>
+         </ul>
+         </div>
  
     );};
   

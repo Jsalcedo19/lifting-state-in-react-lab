@@ -25,9 +25,9 @@ const App = () => {
   const [stack, setStack] = useState([]);
 
   const addIngredient = (ingredient) => {
-    setStack([ingredient, ...stack]);
+    setStack([...stack, ingredient]);
   };
-//used chat to get help for this function.
+//used chatgpt to get help for this function.
   const removeIngredient = (index) => {
     setStack(stack.filter((_, i) => i !== index));
   };
