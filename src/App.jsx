@@ -14,7 +14,7 @@ export const availableIngredients = [
   { name: "Black Bean Patty", color: "#3F250B" },
   { name: "Chicken Patty", color: "burlywood" },
   { name: "Lettuce", color: "lawngreen" },
-  { name: "Tomato", color: "tomato" },
+  { name: "Tomato", color: "tomato" }, 
   { name: "Bacon", color: "maroon" },
   { name: "Onion", color: "lightyellow" },
   { name: "Cheddar Cheese", color: "#FDE18B" },
