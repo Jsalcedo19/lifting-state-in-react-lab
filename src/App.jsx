@@ -29,7 +29,7 @@ const App = () => {
   };
 //used chatgpt to get help for this function.
   const removeIngredient = (index) => {
-    setStack(stack.filter((_, i) => i !== index));
+    setStack(stack.filter((ingredients, i) => i !== index));
   };
 
   return (
@@ -37,13 +37,13 @@ const App = () => {
       <h1>Burger Stacker</h1>
       <section>
         <IngredientList
-            ingredients={availableIngredients}
-            addIngredient={addIngredient} />    
+            ingredients={availableIngredients}addIngredient={addIngredient} />   
+
+
           <BurgerStack stack={stack} removeIngredient={removeIngredient} />
         </section>
-      
-    </main>
-  )
-};
+       </main>
+       )
+      };
 
 export default App;
